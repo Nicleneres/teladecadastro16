@@ -7,8 +7,13 @@
 body{
     width: 100%;
     height: 100vh;
-    font-family: 'Poppins', sans-serifs;
-    background: linear-gradient(-45deg, #ffce51, #ff7253, #ff0000);
+    font-family: 'Poppins', sans-serif;
+    background: linear-gradient(-45deg, #ff0000, #ff0001, #ff0002 );
+}
+#cad{
+    margin-top: auto;
+
+
 }
 #form{
     position: relative;
@@ -21,6 +26,8 @@ body{
     width: min-content;
     align-items: center;
     color:black; 
+    animation: iniciar 1.6s ease-out;
+    pointer-events: all;
 }
 .title{
     font-size: 1.8em;
@@ -31,4 +38,54 @@ body{
     border-radius: 22px;
     border: 2px #6f7e8a solid;
     padding: 5px;
+    margin: 0px 0px 12px -5px;
+}
+input i{
+    font-size: 1,2em;
+    padding: 5px;
+    background-color: #f00d0d;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+.input input{
+    width: 80%;
+    border: none;
+    outline: none;
+    font-family: 'Poppins', sans-serif;
+    transform: translateY(-10%);
+    color:#6f7e8a;
+    font-size: 11pt;
+}
+#btn{
+    margin-top: 10%;
+    width: 100%;
+    text-align: center;
+}
+#btn button{
+    font-family: 'Poppins', sans-serif;
+    background-color: #f00d0d;
+    width: 100%;
+    height: 40px;
+    border: none;
+    font-size: 1.2em;
+    color: white;
+    border-radius: 20px;
+    outline: none;
+    cursor: pointer;
+}
+#btn button:hover{
+    background-color: #ff0000;
+}
+@keyframes iniciar{
+    0%{
+        top: -20%;
+        opacity: 0;
+        pointer-events: none;
+    }
+    100%{
+        top: 50%;
+        opacity: 100%;
+        pointer-events: all;
+    }
+
 }
